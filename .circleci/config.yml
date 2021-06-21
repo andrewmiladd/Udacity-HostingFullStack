@@ -48,4 +48,5 @@ jobs:
 workflows:
   deploy-workflow:
     jobs:
-      - aws-elastic-beanstalk/deploy
+      - aws-elastic-beanstalk/deploy:
+        app-dir: './udagram-api'
