@@ -42,4 +42,4 @@ jobs:
       - run:
           name: Front-End deploy
           command: |
-            npm run fronend:deploy
+            npm run frontend:deploy
