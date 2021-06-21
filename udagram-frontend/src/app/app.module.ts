@@ -23,7 +23,7 @@ import { ApiService } from './api/api.service';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    AuthModule
+    AuthModule,
   ],
   providers: [
     ApiService,
