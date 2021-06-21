@@ -2,6 +2,7 @@ version: 2.1
 orbs:
   # orgs contain basc recipes and reproducible actions (install node, aws, etc.)
   node: circleci/node@4.1.0
+  aws-cli: circleci/aws-cli@2.0.3
   # different jobs are calles later in the workflows sections
 jobs:
   build:
@@ -11,6 +12,10 @@ jobs:
     steps:
       - node/install
       - checkout
+      - aws-cli/setup:
+          aws-access-key-id: AKIAZADZ5PYK64EXRQ3N 
+          aws-secret-access-key: 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 
+          aws-region: us-east-1 
       # install dependencies in both apps
       - run:
           name: Front-End install
@@ -30,10 +35,10 @@ jobs:
           command: |
             npm run backend:build
       # Deploy front and back end apps
-      - run:
-          name: Back-End deploy
-          command: |
-            npm run backend:deploy
+      #- run:
+      #    name: Back-End deploy
+      #    command: |
+      #      npm run backend:deploy
       - run:
           name: Front-End deploy
           command: |
