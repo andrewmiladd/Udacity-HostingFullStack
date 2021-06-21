@@ -13,9 +13,9 @@ jobs:
       - node/install
       - checkout
       - aws-cli/setup:
-          aws-access-key-id: AKIAZADZ5PYK64EXRQ3N 
-          aws-secret-access-key: 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 
-          aws-region: us-east-1 
+          aws-access-key-id: "AKIAZADZ5PYK64EXRQ3N" 
+          aws-secret-access-key: "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 "
+          aws-region: "us-east-1 "
       # install dependencies in both apps
       - run:
           name: Front-End install
