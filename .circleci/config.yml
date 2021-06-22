@@ -45,13 +45,3 @@ jobs:
           name: Front-End deploy
           command: |
             npm run frontend:deploy
-#workflows:
-#  elastic-beanstalk-workflow:
-#    jobs:
-#      - build
-#      - aws-elastic-beanstalk/deploy:
-#          app-dir: ./udagram-api
-#          environment-name: Udacityfullstack-env
-#          application-name: udagram-api
-#          requires:
-#            - build
