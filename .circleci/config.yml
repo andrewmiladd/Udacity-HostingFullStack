@@ -49,8 +49,6 @@ workflows:
     jobs:
       - build
       - aws-elastic-beanstalk/deploy:
-          requires:
-              - build
           app-dir: ./udagram-api
           environment-name: Udacityfullstack-env
           application-name: udagram-api
