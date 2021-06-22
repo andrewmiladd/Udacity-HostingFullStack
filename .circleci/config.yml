@@ -35,22 +35,22 @@ jobs:
           name: Back-End Build
           command: |
             npm run backend:build
-      # Deploy front and back end apps
-      #- run:
-      #    name: Back-End deploy
-      #    command: |
-      #      npm run backend:deploy
+      Deploy front and back end apps
+      - run:
+          name: Back-End deploy
+          command: |
+            npm run backend:deploy
       - run:
           name: Front-End deploy
           command: |
             npm run frontend:deploy
-workflows:
-  elastic-beanstalk-workflow:
-    jobs:
-      - build
-      - aws-elastic-beanstalk/deploy:
-          app-dir: ./udagram-api
-          environment-name: Udacityfullstack-env
-          application-name: udagram-api
-          requires:
-            - build
+#workflows:
+#  elastic-beanstalk-workflow:
+#    jobs:
+#      - build
+#      - aws-elastic-beanstalk/deploy:
+#          app-dir: ./udagram-api
+#          environment-name: Udacityfullstack-env
+#          application-name: udagram-api
+#          requires:
+#            - build
