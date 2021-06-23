@@ -11,7 +11,8 @@ jobs:
       # the base image can run most needed actions with orbs
       - image: "cimg/base:stable"
     steps:
-      - node/install
+      - node/install:
+          node-version: 12.22.1
       - checkout
       - aws-cli/setup:
           aws-access-key-id: AWS_ACCESS_KEY_ID
