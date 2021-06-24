@@ -46,10 +46,10 @@ jobs:
           name: Front-End deploy
           command: |
             npm run frontend:deploy
-      - run:
-          name: Front-End Unit Test
-          command: |
-            npm run unitTest
+      #- run:
+       #   name: Front-End Unit Test
+        #  command: |
+         #   npm run unitTest
       - run:
           name: End-To-End Test
           command: |
