@@ -1,5 +1,53 @@
-# Link to hosted front-end:
-	http://udacity-fullstackhosted.s3-website-us-east-1.amazonaws.com/home
+# Preparing source code infrastructure for deployment
+
+## Write code that demonstrates parameterized environment variables
+
+- Environment variables stored in AWS elastic beanstalk configuration of environment Udagramapi-env under software -> Environment properties settings.
+- Variables: 
+	- AWS_BUCKET = udacity-fullstackhosted
+	- AWS_PROFILE = CLIUser
+	- AWS_REGION = us-east-1
+	- JWT_SECRET = udacity123
+	- URL = http://udacity-fullstackhosted.s3-website-us-east-1.amazonaws.com/
+
+- Environment variables for CI/CD stored in CircleCI Project Settings -> Environment Variables
+	- AWS_ACCESS_KEY_ID - IAM user access key for AWScli and elastic beanstalk deployment
+	- AWS_SECRET_ACCESS_KEY - Secret for IAM user
+	- AWS_BUCKET - S3 Bucket to deploy front-end
+	- AWS_REGION
+
+## Write a project-level package.json file and organize it properly
+
+	- Project-level package.json file contains scripts:
+		- "frontend:install": "cd udagram-frontend && npm install"
+		- "backend:install": "cd udagram-api && npm install"
+		- "frontend:build": "cd udagram-frontend && npm run build"
+		- "backend:build": "cd udagram-api && npm run build"
+		- "backend:deploy": "cd udagram-api && eb init --region us-east-1 --platform Node.js udagram-api && eb deploy Udagramapi-env"
+		- "frontend:deploy": "cd udagram-frontend && chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
+		- "unitTest": "cd udagram-frontend && npm run test"
+		- "endToEndTest": "cd udagram-frontend && npm run e2e"
+
+
+## Configure the needed infrastructure for a web application
+	- Link to hosted front-end: http://udacity-fullstackhosted.s3-website-us-east-1.amazonaws.com/home
+	- RDS Screenshot - ![RDS Screenshot](./screenshots/RDS Service.png)
+	- Elastic Beanstalk Screenshot - ![EB Screenshot](./screenshots/Elastic Beanstalk Service.png)
+	- S3 Screenshot - ![S3 Screenshot](./screenshots/S3 Service.png)
+
+# Configuring Continuous Integration Pipeline with Github
+
+## Trigger a successful pipeline on each push to the main branch
+	- [![CircleCI](https://circleci.com/gh/Daniel-M-Kelly/Udacity-HostingFullStack.svg?style=svg)]
+	- See screenshot ![Build Screenshot](./screenshots/CircleCI.png)
+
+## Write a proper pipeline file using the config.yml format used by CircleCi
+
+ - See .circleci/config.yml
+
+## Configure secrets via the Continuous Integration software
+	- See screenshot ![CircleCI Secrets](./screenshots/CircleCI Secrets.png)
+
 
 # Udagram
 
