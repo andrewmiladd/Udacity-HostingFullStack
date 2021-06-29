@@ -31,22 +31,22 @@
 
 ## Configure the needed infrastructure for a web application
 	- Link to hosted front-end: http://udacity-fullstackhosted.s3-website-us-east-1.amazonaws.com/home
-	- RDS Screenshot - ![RDS Screenshot](./screenshots/RDS Service.png)
-	- Elastic Beanstalk Screenshot - ![EB Screenshot](./screenshots/Elastic Beanstalk Service.png)
-	- S3 Screenshot - ![S3 Screenshot](./screenshots/S3 Service.png)
+	- RDS Screenshot - ![RDS Screenshot](/screenshots/RDSService.png)
+	- Elastic Beanstalk Screenshot - ![EB Screenshot](/screenshots/ElasticBeanstalkService.png)
+	- S3 Screenshot - ![S3 Screenshot](/screenshots/S3Service.png)
 
 # Configuring Continuous Integration Pipeline with Github
 
 ## Trigger a successful pipeline on each push to the main branch
 	- [![CircleCI](https://circleci.com/gh/Daniel-M-Kelly/Udacity-HostingFullStack.svg?style=svg)]
-	- See screenshot ![Build Screenshot](./screenshots/CircleCI.png)
+	- See screenshot ![Build Screenshot](/screenshots/CircleCI.png)
 
 ## Write a proper pipeline file using the config.yml format used by CircleCi
 
  - See .circleci/config.yml
 
 ## Configure secrets via the Continuous Integration software
-	- See screenshot ![CircleCI Secrets](./screenshots/CircleCI Secrets.png)
+	- See screenshot ![CircleCI Secrets](/screenshots/CircleCISecrets.png)
 
 
 # Udagram
