@@ -32,18 +32,20 @@
 ## Configure the needed infrastructure for a web application
 	- Link to hosted front-end: http://udacity-fullstackhosted.s3-website-us-east-1.amazonaws.com/home
 	- RDS Screenshot - 
-![RDS Screenshot](/screenshots/RDSService.png)
+![RDS Screenshot](/documentation/screenshots/RDSService.png)
 	- Elastic Beanstalk Screenshot - 
-![EB Screenshot](/screenshots/ElasticBeanstalkService.png)
+![EB Screenshot](/documentation/screenshots/ElasticBeanstalkService.png)
 	- S3 Screenshot - 
-![S3 Screenshot](/screenshots/S3Service.png)
+![S3 Screenshot](/documentation/screenshots/S3Service.png)
 
 # Configuring Continuous Integration Pipeline with Github
 
 ## Trigger a successful pipeline on each push to the main branch
+	- CircleCI Build Status:
 ![CircleCI](https://circleci.com/gh/Daniel-M-Kelly/Udacity-HostingFullStack.svg?style=svg)
+
 	- See screenshot
-![Build Screenshot](/screenshots/CircleCI.png)
+![Build Screenshot](/documentation/screenshots/CircleCI.png)
 
 ## Write a proper pipeline file using the config.yml format used by CircleCi
 
@@ -53,6 +55,13 @@
 	- See screenshot 
 ![CircleCI Secrets](/screenshots/CircleCISecrets.png)
 
+# Documenting Deployment Process
+
+## Write code that demonstrates a well-organized docs folder
+
+## Prepare an architecture diagram to document the deployment flow
+	- Pipeline Diagram
+![Diagram](https://lucid.app/publicSegments/view/82823f27-ab82-422a-b721-ddf488c0b5c8/image.png)
 
 # Udagram
 
