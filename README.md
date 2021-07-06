@@ -53,7 +53,7 @@
 
 ## Configure secrets via the Continuous Integration software
 	- See screenshot 
-![CircleCI Secrets](/screenshots/CircleCISecrets.png)
+![CircleCI Secrets](/documentation/screenshots/CircleCISecrets.png)
 
 # Documenting Deployment Process
 
