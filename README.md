@@ -60,8 +60,11 @@
 ## Write code that demonstrates a well-organized docs folder
 
 ## Prepare an architecture diagram to document the deployment flow
-	- Pipeline Diagram
-![Diagram](https://lucid.app/publicSegments/view/82823f27-ab82-422a-b721-ddf488c0b5c8/image.png)
+	- Development Pipeline Diagram
+![Development Diagram](https://lucid.app/publicSegments/view/82823f27-ab82-422a-b721-ddf488c0b5c8/image.png)
+
+	- Infrastructure Diagram
+![App Access Diagram](https://lucid.app/publicSegments/view/78f625b2-12b3-4cd5-9bf3-e36831da992b/image.png)
 
 # Udagram
 
