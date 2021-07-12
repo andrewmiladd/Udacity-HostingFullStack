@@ -38,10 +38,6 @@ jobs:
           name: Back-End Build
           command: |
             npm run backend:build
-      - run:
-          name: Back-End environment setup
-          command: |
-            npm run backend:envSetup
       # Deploy front and back end apps
       - run:
           name: Back-End deploy
