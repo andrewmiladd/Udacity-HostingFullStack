@@ -1,1 +1,3 @@
-echo $(eb setenv PORT=process.env.CI_PORT POSTGRES_DB=process.env.CI_POSTGRES_DB POSTGRES_HOST=process.env.CI_POSTGRES_HOST POSTGRES_PASSWORD=process.env.CI_POSTGRES_PASSWORD POSTGRES_USERNAME=process.env.CI_POSTGRES_USERNAME)
+# eb setenv PORT=process.env.CI_PORT POSTGRES_DB=process.env.CI_POSTGRES_DB POSTGRES_HOST=process.env.CI_POSTGRES_HOST POSTGRES_PASSWORD=process.env.CI_POSTGRES_PASSWORD POSTGRES_USERNAME=process.env.CI_POSTGRES_USERNAME
+
+eb setenv PORT=5432 POSTGRES_DB=udacityfullstack-db POSTGRES_HOST=udacityfullstack-db.c944lgdehjcn.us-east-1.rds.amazonaws.com POSTGRES_PASSWORD=postgres123 POSTGRES_USERNAME=postgres
