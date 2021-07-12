@@ -5,7 +5,7 @@
 		"backend:install": "cd udagram-api && npm install",
 		"frontend:build": "cd udagram-frontend && npm run build",
 		"backend:build": "cd udagram-api && npm run build",
-		"backend:deploy": "cd udagram-api && eb init --region us-east-1 --platform Node.js udagram-api && eb deploy Env-Udagramapi && eb setenv PORT=5432",
+		"backend:deploy": "cd udagram-api && eb init --region us-east-1 --platform Node.js udagram-api && eb deploy Env-Udagramapi && eb setenv PORT=process.env.CI_PORT",
 		"frontend:deploy": "cd udagram-frontend && chmod +x ./bin/deploy.sh && ./bin/deploy.sh",
 		"unitTest": "cd udagram-frontend && npm run test",
 		"endToEndTest": "cd udagram-frontend && npm run e2e"
