@@ -38,6 +38,10 @@ jobs:
           name: Back-End Build
           command: |
             npm run backend:build
+      - run:
+          name: Back-End environment variables
+          command: |
+            eb setenv PORT=$CI_PORT
       # Deploy front and back end apps
       - run:
           name: Back-End deploy
